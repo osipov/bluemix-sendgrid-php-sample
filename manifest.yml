@@ -1,0 +1,9 @@
+---
+applications:
+- name: sendgrid
+  memory: 128M
+  instances: 1
+  host: sendgrid-${random-word}
+  buildpack: php_buildpack
+  services:
+  - mySendgrid  
